@@ -1,3 +1,13 @@
 .env
 node_modules/
 .prisma/
+
+curl -X POST http://localhost:3001/api/bookings \
+  -H "Content-Type: application/json" \
+  -d '{
+    "guestName": "สุธีมนต์ วงศ์พระราม",
+    "guestEmail": "68030300@example.com",
+    "roomId": 1,
+    "checkIn": "2025-08-02",
+    "checkOut": "2025-08-04"
+  }'
